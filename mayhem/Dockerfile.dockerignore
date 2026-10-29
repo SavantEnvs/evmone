@@ -1,0 +1,3 @@
+# Re-include .git (upstream .dockerignore drops it); keep build outputs out of the context.
+/build/
+/.idea/

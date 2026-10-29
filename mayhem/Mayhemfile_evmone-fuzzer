@@ -1,0 +1,9 @@
+project: savantenvs/evmone
+target: evmone-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/evmone-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/evmone-fuzzer
+    libfuzzer: true
+    timeout: 10
